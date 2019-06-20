@@ -3,12 +3,16 @@
  */
 package JunitTest;
 
-import org.junit.Test;
+import  org.junit.Assert.*;
+
 import static org.junit.Assert.*;
 
+import org.junit.Test;
+
 public class LibraryTest {
-    @Test public void testSomeLibraryMethod() {
-        Library classUnderTest = new Library();
-        assertEquals(26,10+16);
-    }
+	@Test 
+	public void testSomeLibraryMethod() {
+		Library library = new Library();
+		assertEquals(26,10+16);
+	}
 }
