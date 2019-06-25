@@ -15,4 +15,9 @@ public class LibraryTest {
 		Library library = new Library();
 		assertEquals(26,10+16);
 	}
+	@Test 
+	public void testLibraryMethod() {
+		Library library = new Library();
+		assertEquals(0,16-16);
+	}
 }
