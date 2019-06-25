@@ -14,12 +14,12 @@ plugins{
     // Apply the application plugin to add support for building an application
     id 'application'
 }
-/*plugin: 'java'
+ apply plugin: 'java'
 
 dependencies {
   testCompile 'junit:junit:4.12'
 }
-*/
+
 buildScan {
     termsOfServiceUrl = 'https://gradle.com/terms-of-service'
     termsOfServiceAgree = 'yes'
@@ -32,7 +32,7 @@ repositories {
     mavenCentral()
 }
 
-dependencies {
+/*dependencies {
      def junit4Version   = '4.12'
      def junitBomVersion = '5.4.2'
      
@@ -54,7 +54,7 @@ dependencies {
 
     // Use JUnit test framework
    // testImplementation 'junit:junit:4.12'
-}
+}*/
 test {
     useJUnitPlatform()
 }
